@@ -3,7 +3,7 @@ import { HumanMessage, SystemMessage } from "langchain/schema";
 
 import { NextResponse } from "next/server";
 
-export function isRateLimitExceeded(err: unknown): boolean {
+function isRateLimitExceeded(err: unknown): boolean {
   return (
     typeof err === "object" &&
     err !== null &&
