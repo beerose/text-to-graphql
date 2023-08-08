@@ -14,17 +14,8 @@ function App() {
     "idle" | "loading" | "success" | { type: "error"; message: string }
   >("idle");
   const [copied, setCopied] = useState(false);
-  const [prompt, setPrompt] = useState("tell me something about books");
-  const [schema, setSchema] = useState(`\
-type Book {
-  title: String
-  author: Author
-}
-
-type Author {
-  name: String
-  books: [Book]
-}`);
+  const [prompt, setPrompt] = useState("");
+  const [schema, setSchema] = useState("");
   const [result, setResult] = useState("");
 
   const onPromptRun = async () => {
