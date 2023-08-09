@@ -54,7 +54,7 @@ function App() {
   };
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-700 w-full min-h-full p-7 flex flex-col items-center pb-8 justify-center">
+    <div className="bg-slate-50 dark:bg-slate-700 w-full min-h-full px-2 pb-4 sm:px-10 sm:py-10  flex flex-col items-center justify-between sm:justify-center">
       <DarkModeSwitch
         style={{
           marginBottom: "2rem",
@@ -93,7 +93,7 @@ function App() {
       <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100 py-4">
         ✨ Text to GraphQL ✨
       </h1>
-      <div className="sm:grid grid-cols-7 w-full h-full sm:h-[400px] lg:w-4/5">
+      <div className="flex flex-col sm:grid grid-cols-7 w-full h-full sm:h-[400px] lg:w-4/5">
         <div className="col-span-3 space-y-8">
           <TextInput
             placeholder="Enter your prompt here"
@@ -118,7 +118,7 @@ function App() {
             />
           </button>
         </div>
-        <div className="col-span-3 bg-white rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 prose mt-[24px]  overflow-scroll">
+        <div className="col-span-3 bg-white rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 prose sm:mt-[24px]  overflow-scroll">
           <pre className="h-[200px] sm:h-full w-full relative">
             <div className="absolute top-0 right-0">
               {copied && (
@@ -165,7 +165,7 @@ function App() {
           </pre>
         </div>
       </div>
-      <footer className="text-gray-500 dark:text-gray-400 text-xs mt-4 absolute bottom-2">
+      <footer className="text-gray-500 dark:text-gray-400 text-xs mt-4 sm:absolute bottom-2">
         Made with ❤️ by{" "}
         <a
           className="text-gray-900 dark:text-gray-100 underline underline-offset-2"
